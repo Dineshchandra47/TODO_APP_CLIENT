@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
 }
 .todo{
     width: 100%;
@@ -9,6 +11,7 @@
 header{
     width: 100%;
     height: 20vh;
+    background-color:rgb(255, 153, 204);
 }
 header .title {
     width: max-content;
@@ -41,7 +44,7 @@ section .left{
     width: 20%;
     min-height: 80vh;
     max-height: max-content;
-    background-color: rgb(125, 125, 241);
+    background-color:#0066ff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,14 +103,26 @@ td{
     color: black;
 }
 .End{
-    color: red;
+    color: rgb(255, 0, 0);
 }
 .Start{
-    color: green;
+    color: rgb(51, 204, 51);
 }
 .Pause{
-    color: rgb(109, 109, 3);
+    color:rgb(255, 102, 0);
 }
 .Resume{
-    color: rgb(0, 56, 56);
+    color: rgb(51, 204, 204);
+}
+.button-logout, activity{
+    background-color: #f39e55;
+    border-radius: 8px;
+    width: 6vw;
+    margin-bottom: 4rem;
+}
+.button-logout{
+    cursor: pointer;
+}
+.button-logout:hover{
+    background-color: aliceblue;
 }

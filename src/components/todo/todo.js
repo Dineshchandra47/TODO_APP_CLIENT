@@ -139,7 +139,7 @@ function Todo({ user, setUser }) {
             })}
           </div>
           <div className="bottom">
-            <button
+            <button className="button-logout"
               onClick={() => {
                 setUser({});
                 navigate("/");

@@ -28,6 +28,7 @@
 .button{
     background-color: #f39e55;
     border-radius: 8px;
+    width: 6vw;
 }
 .button:hover{
     background-color: aliceblue;
