@@ -45,7 +45,7 @@ function Register({ setUser, setContent }) {
         />
         <br />
         <br />
-        <button
+        <button className="button"
           onClick={(e) => {
             register(e);
           }}
@@ -54,7 +54,7 @@ function Register({ setUser, setContent }) {
         </button>
       </form>
       <p>Already have an account?</p>
-      <button
+      <button className="button"
         onClick={() => {
           setContent(<Signin setUser={setUser} setContent={setContent} />);
         }}

@@ -36,7 +36,7 @@ function Signin({ setUser, setContent }) {
         <input id="password" type="password" placeholder="Password" />
         <br />
         <br />
-        <button
+        <button className="button"
           onClick={(e) => {
             handleSignin(e);
           }}
@@ -45,7 +45,7 @@ function Signin({ setUser, setContent }) {
         </button>
       </form>
       <p>Don't have an account?</p>
-      <button
+      <button className="button"
         onClick={() =>
           setContent(<Register setUser={setUser} setContent={setContent} />)
         }
