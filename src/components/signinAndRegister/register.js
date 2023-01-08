@@ -10,8 +10,8 @@ function Register({ setUser, setContent }) {
       let confirmpassword = document.getElementById("confirmpassword").value;
       if (password === confirmpassword) {
         const result = await (
-          // await fetch("https://todo-app-server-555v.onrender.com/register", {
-          await fetch("http://localhost:8000/register", {
+          // await fetch("http://localhost:8000/register", {
+          await fetch("https://todo-app-server-555v.onrender.com/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password }),

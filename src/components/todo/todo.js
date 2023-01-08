@@ -104,8 +104,8 @@ function Todo({ user, setUser }) {
       let data = obj;
       // eslint-disable-next-line 
       const result = await (
-        // await fetch("https://todo-app-server-555v.onrender.com/update", {
-        await fetch("http://localhost:8000/update", {
+        // await fetch("http://localhost:8000/update", {
+        await fetch("https://todo-app-server-555v.onrender.com/update", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ username, data }),
@@ -132,9 +132,10 @@ function Todo({ user, setUser }) {
             <h2>History</h2>
             {obj.map((item, i) => {
               if (item.stat === "Completed") {
-                return <h5 key={i}>{`${item.activity}  ${item.time}`}</h5>;
+                return <h5 key={i} >{`${item.activity}  ${item.time}`}</h5>;
               } else {
-                return <></>;
+                return <>
+                </>;
               }
             })}
           </div>
