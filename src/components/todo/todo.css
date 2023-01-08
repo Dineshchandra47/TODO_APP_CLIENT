@@ -109,10 +109,10 @@ td{
     color: rgb(51, 204, 51);
 }
 .Pause{
-    color:rgb(255, 102, 0);
+    color:rgb(0, 0, 255);
 }
 .Resume{
-    color: rgb(51, 204, 204);
+    color:rgb(204, 153, 0);
 }
 .button-logout, activity{
     background-color: #f39e55;
